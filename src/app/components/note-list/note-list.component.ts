@@ -12,9 +12,7 @@ export class NoteListComponent implements OnInit {
     currentNote: M.Note;
     notes: M.Note[];
 
-    constructor(private noteService: NoteService, private dragulaService: DragulaService) {
-
-    }
+    constructor(private noteService: NoteService, private dragulaService: DragulaService) { }
 
     ngOnInit() {
         this.loadData();
