@@ -1,0 +1,15 @@
+<div class="row form-group">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+        <button class="btn btn-warning btn-md add-new-note" (click)="addNewNote()">Add A New Note</button>
+    </div>
+</div>
+<div class="row" *ngIf="notes" [dragula]='"bag"' [dragulaModel]='notes'>
+    <div class="col-lg-3 col-md-4 col-sm-6 form-group"
+                *ngFor="let note of notes">
+        <note
+            (notesChange)="notesChange($event)"
+            [existNote]="note"
+            [notes]="notes">
+        </note>
+    </div>
+</div>

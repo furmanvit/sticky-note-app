@@ -1,0 +1,15 @@
+DONE create note.component
+DONE create "add" button at the top right part of the screen,
+  * clicking on it will create a new sticky note
+DONE Each sticky note will have an “X” button that deletes it
+DONE When you click inside a sticky note you can edit it
+DONE Every change (adding a sticky note, deleting a sticky note, 
+  setting a sticky note text) will be saved to the local storage. 
+  So if you refresh the page, it will look the same
+- Bonus: add the abilitiy to drag&drop the sticky notes and change their position on the page
+
+19.02.2018
+DONE create note-list component
+- find out how to compile SCSS into CSS (later)
+DONE add note to LocaleStorage (LS)
+- add css to note

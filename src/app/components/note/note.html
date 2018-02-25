@@ -1,0 +1,17 @@
+<div class="note">
+    <span class="note-header">
+            <span class="icon-active add-note-icon">
+                <i class="fa fa-plus big-icon fa-3x" aria-hidden="true" (click)="addNewNote()"></i>
+            </span> 
+            <span class="icon-active delete-note-icon">
+                <i class="fa fa-trash big-icon fa-3x" aria-hidden="true" (click)="deleteNote(existNote)"></i>
+            </span>
+            
+    </span>
+    
+    <textarea   id="" cols="32" rows="10" 
+                [(ngModel)]="existNote.text"
+                (ngModelChange)="editNote(existNote)">
+                {{ existNote.text }}
+    </textarea>
+</div>
