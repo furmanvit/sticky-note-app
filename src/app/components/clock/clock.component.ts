@@ -23,9 +23,7 @@ export class ClockComponent implements OnInit {
         let now = new Date();
         let year = now.getFullYear();
         let month = now.getMonth() + 1;
-        
         let day = now.getDate();
-        
         let hou = now.getHours();
         let min = now.getMinutes();
         let sec = now.getSeconds();
